@@ -1,0 +1,16 @@
+net: "/data_1/noise2noise-master/by_caffe/SRResNet-BN.prototxt"
+test_iter: 500000000
+test_interval: 500000000
+base_lr: 0.00001
+display: 100
+#clip_gradients:1
+solver_type:ADAM
+lr_policy: "poly"
+max_iter: 50000
+power: 1
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 5000
+snapshot_prefix: "/data_1/noise2noise-master/by_caffe/snap/0516"
+test_initialization: false
+solver_mode: GPU
